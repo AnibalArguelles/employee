@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "1ee9e1bf-aa04-4057-94ae-df599e29bd19",
+		"name": "employees",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26028497"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/employees",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/employees/10",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/employees/search",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/search?name=Anibal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Anibal"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/employees",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"firstName\": \"Juan\",\n        \"middleName\": \"Carlos\",\n        \"lastName\": \"Pérez\",\n        \"secondLastName\": \"Gómez\",\n        \"age\": 30,\n        \"gender\": \"M\",\n        \"dateOfBirth\": \"1993-01-10\",\n        \"position\": \"Developer\"\n    },\n    {\n        \"firstName\": \"Ana\",\n        \"middleName\": \"María\",\n        \"lastName\": \"López\",\n        \"secondLastName\": \"Martínez\",\n        \"age\": 28,\n        \"gender\": \"F\",\n        \"dateOfBirth\": \"1995-03-15\",\n        \"position\": \"Designer\"\n    },\n    {\n        \"firstName\": \"Carlos\",\n        \"middleName\": \"Alberto\",\n        \"lastName\": \"Ramírez\",\n        \"secondLastName\": \"Fernández\",\n        \"age\": 35,\n        \"gender\": \"M\",\n        \"dateOfBirth\": \"1988-06-20\",\n        \"position\": \"Manager\"\n    },\n    {\n        \"firstName\": \"Lucía\",\n        \"middleName\": \"Elena\",\n        \"lastName\": \"González\",\n        \"secondLastName\": \"Sánchez\",\n        \"age\": 32,\n        \"gender\": \"F\",\n        \"dateOfBirth\": \"1991-07-25\",\n        \"position\": \"HR Specialist\"\n    },\n    {\n        \"firstName\": \"Pedro\",\n        \"middleName\": \"José\",\n        \"lastName\": \"Martínez\",\n        \"secondLastName\": \"Hernández\",\n        \"age\": 40,\n        \"gender\": \"M\",\n        \"dateOfBirth\": \"1983-05-30\",\n        \"position\": \"Sales Representative\"\n    },\n    {\n        \"firstName\": \"Marta\",\n        \"middleName\": \"Isabel\",\n        \"lastName\": \"Sánchez\",\n        \"secondLastName\": \"Torres\",\n        \"age\": 26,\n        \"gender\": \"F\",\n        \"dateOfBirth\": \"1997-08-10\",\n        \"position\": \"Marketing\"\n    },\n    {\n        \"firstName\": \"Luis\",\n        \"middleName\": \"Fernando\",\n        \"lastName\": \"Fernández\",\n        \"secondLastName\": \"Pérez\",\n        \"age\": 38,\n        \"gender\": \"M\",\n        \"dateOfBirth\": \"1985-02-14\",\n        \"position\": \"Analyst\"\n    },\n    {\n        \"firstName\": \"Raquel\",\n        \"middleName\": \"Beatriz\",\n        \"lastName\": \"Moreno\",\n        \"secondLastName\": \"Alonso\",\n        \"age\": 29,\n        \"gender\": \"F\",\n        \"dateOfBirth\": \"1994-09-05\",\n        \"position\": \"Developer\"\n    },\n    {\n        \"firstName\": \"Javier\",\n        \"middleName\": \"Antonio\",\n        \"lastName\": \"Hernández\",\n        \"secondLastName\": \"Ruiz\",\n        \"age\": 33,\n        \"gender\": \"M\",\n        \"dateOfBirth\": \"1990-04-02\",\n        \"position\": \"Support Technician\"\n    },\n    {\n        \"firstName\": \"Anibal\",\n        \"middleName\": \"\",\n        \"lastName\": \"Arguelles\",\n        \"secondLastName\": \"Garcia\",\n        \"age\": 34,\n        \"gender\": \"M\",\n        \"dateOfBirth\": \"1990-05-30\",\n        \"position\": \"Developer of invex\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/employees/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Anibal\",\n    \"middleName\": \"Anibal\",\n    \"lastName\": \"Arguelles\",\n    \"secondLastName\": \"Garcia\",\n    \"age\": 34,\n    \"gender\": \"M\",\n    \"dateOfBirth\": \"1990-05-30\",\n    \"position\": \"Developer of invex\",\n    \"active\" : false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/employees/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/actuator/health",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/actuator/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
