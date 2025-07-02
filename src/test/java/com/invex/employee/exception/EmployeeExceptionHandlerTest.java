@@ -48,7 +48,7 @@ public class EmployeeExceptionHandlerTest {
         assertTrue(response.getHeaders().isEmpty());
         assertNotNull(response.getBody());
         String body = (String) response.getBody();
-        assertTrue(body.contains("El formato del cuerpo de la petición es inválido"));
+        assertTrue(body.contains("The request body format is invalid. Please check the data. "));
         assertTrue(body.contains("JSON inválido"));
     }
 
@@ -70,7 +70,7 @@ public class EmployeeExceptionHandlerTest {
         assertNotNull(response.getBody());
 
         String body = (String) response.getBody();
-        assertTrue(body.contains("Errores de validación:"));
+        assertTrue(body.contains("Validation errors:"));
         assertTrue(body.contains("Campo obligatorio"));
         assertTrue(body.contains("Formato inválido"));
     }

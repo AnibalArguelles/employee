@@ -97,7 +97,7 @@ public class EmployeeServiceTest {
         EmployeeNotFoundException ex = assertThrows(EmployeeNotFoundException.class,
                 () -> employeeService.getEmployeeById(1));
 
-        assertEquals("Empleado con ID 1 no encontrado", ex.getMessage());
+        assertEquals("Employee with ID 1 not found", ex.getMessage());
         verify(employeeRepository, times(1)).findById(1);
     }
 
@@ -149,7 +149,7 @@ public class EmployeeServiceTest {
         EmployeeNotFoundException ex = assertThrows(EmployeeNotFoundException.class,
                 () -> employeeService.updateEmployee(employeeDTO, 1));
 
-        assertEquals("Empleado con ID 1 no encontrado", ex.getMessage());
+        assertEquals("Employee with ID 1 not found", ex.getMessage());
         verify(employeeRepository, times(1)).findById(1);
         verify(employeeRepository, never()).save(any());
     }
